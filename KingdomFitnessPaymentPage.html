@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    
+    <link href="KingdomFitness.css" type="text/css" rel="stylesheet" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    
+    
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
+    <title>
+        Kingdom Fitness - Payments
+    </title>
+</head>
+<body>
+
+     <div class="banner">
+        <div class="bannercontent">
+            
+            <div class="nav">
+                <div id="home"></div>
+                
+                <a href="KingdomFitness.html"><img src="Kingdom%20Fitness%20Logo%20-%20Clear%20BG.png" /></a>
+                
+                <ul>
+                    <li><a href="KingdomFitness.html" class="navbtn">Home</a></li>
+                    <li><a href="KingdomFitnessPlansPage.html" class="navbtn">Plans</a></li>
+                    <li><a href="KingdomFitnessPaymentPage.html" class="navbtn">Payments</a></li>
+                </ul>
+                
+            </div> 
+            
+            
+            <div class="paymentsheader">
+                <h2>Client Payments</h2>
+            </div>
+            
+            
+            
+            <div class="row">
+                <div class="payments">
+                    
+                    <div class = "col-md-6">
+                        
+                        <div class="stripeinfo">
+                            <img src="stripe-payments-logo.png" />
+                            <p>For monthly payments, please use the Stripe button below to make your payment!</p>
+                        </div>
+                        
+                        
+                        <div class="paymentlink">
+                            <form action="/your-server-side-code" method="POST">
+                                <script
+                                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                                    data-key="pk_live_GS7quEA0GKJ6hu9yrMTP7439"
+                                    data-amount="19500"
+                                    data-name="Stripe.com"
+                                    data-description="Widget"
+                                    data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                                    data-locale="auto"
+                                    data-zip-code="true">
+                                </script>
+                            </form> 
+                        </div>
+                    </div>
+                    
+                    <div class = "col-md-6">
+                        <div class="paypal">
+                            <div class="paypalinfo">
+                                
+                                <img src="paypal_PNG3.png" />
+                                
+                                <p>For one-time payments, please use the PayPal link below to make your payment!</p>
+                                
+                                <div class="paypallink">
+                                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                        <input type="hidden" name="cmd" value="_s-xclick">
+                                        <input type="hidden" name="hosted_button_id" value="3P7M84L34JPW2">
+                                        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                                        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                                    </form>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+  
+    
+   
+    
+    
+</body>
+</html>

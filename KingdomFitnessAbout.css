@@ -1,0 +1,105 @@
+body {
+    border: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Nav Bar */
+
+.nav {
+    height: 50px;
+    background-color: RGBa(218,165,32,0.5);
+    margin-top: -17px;
+}
+
+.nav ul {
+    text-align: right;
+    word-spacing: 20px;
+    border: none;
+    padding: 12px 20px 0px 0px;
+}
+
+.nav ul li {
+    display: inline;
+    font-size: 18px;
+    
+}
+
+.navbtn {
+    font-family: "Dosis";
+    text-decoration: none;
+    color: black;
+}
+
+.navbtn:hover {
+    background-color: white;
+    border-radius: 15px;
+    padding: 7px 10px 7px 10px;
+}
+
+
+.body {
+    margin-top: -40px;
+}
+
+.body h1 {
+    font-family: "Ubuntu";
+    font-size: 80px;
+    letter-spacing: 5px;
+    color: black;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.body h1 span {
+    color: RGB(218,165,32);
+}
+
+.body h4 {
+    font-family: "Ubuntu";
+    text-align: center;
+    margin: 0px 10px 0px 10px;
+    font-size: 25px;
+    padding: 0px 20px 0px 20px;
+}
+
+
+
+    
+.profile {
+    margin-top: 0px;
+    background-color: white;
+    min-height: 550px;
+    background-color: black;
+}
+
+.profile h1 {
+    font-family: "Ubuntu";
+    font-size: 80px;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: -130px;
+}
+
+.profile img {
+    height: 375px;
+    width: 375px;
+    padding: 140px 0px 0px 20px;
+    float: left;
+    margin-bottom: -375px;
+}
+
+.profile .intro {
+    text-align: right;
+    font-family: "Ubuntu";
+    float: right; 
+    padding: 0px 20px 0px 550px;
+    font-size: 30px;
+    color: white;
+}
+    
+    
